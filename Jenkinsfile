@@ -1,6 +1,4 @@
 pipeline {
-    agent { label 'master' }
-    echo "Start of everything"
     stages {
         when {
         branch 'master'
