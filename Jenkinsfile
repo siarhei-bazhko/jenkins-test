@@ -1,21 +1,9 @@
 pipeline {
+    agent any
     stages {
-        when {
-        branch 'master'
-        }
-        stage('Build') {
+        stage("first") {
             steps {
-               echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-            }
-        }
-        stage('Tezst') {
-            steps {
-                echo 'Testing..!'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                echo 'building.......'
             }
         }
     }
