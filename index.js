@@ -10,6 +10,12 @@ app.get("/", (req, res) => {
 app.get("/beef", (req, res) => {
   res.status(200).json("This is beef");
 });
+app.get("/bee2", (req, res) => {
+  res.status(200).json("This is beef");
+});
+app.get("/beef3", (req, res) => {
+  res.status(200).json("This is beef");
+});
 
 module.exports = app.listen(process.env.PORT || PORT, () =>
   console.log(`Running on http://localhost:${PORT}`)
