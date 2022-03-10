@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-
+    agent { label 'master' }
+    echo "Start of everything"
     stages {
         stage('Build') {
             steps {
